@@ -1,0 +1,20 @@
+const employees = [{
+  name: 'Satti',
+  role: 'Developer'
+}, {
+  name: 'Jenny',
+  role: 'Sales Associate'
+}, {
+  name: 'Javid',
+  role: 'Human Resources Assistant'
+}]
+
+function getEmployeeRole(employeeName, employees){
+    let selectedEmployee;
+	employees.forEach(obj => {
+        if (obj.name === employeeName) {
+            selectedEmployee = obj.role;
+        }
+    })
+	return selectedEmployee;
+}
