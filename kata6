@@ -1,0 +1,9 @@
+const simpsons = [{name: 'Bart'}, {name: 'Lisa'}, {name: 'Maggie'}]
+
+const names = []
+
+simpsons.forEach(obj => {names.push(obj.name)})
+
+joinedNames = names.join(', ').replace(/,(?=[^,]*$)/,' &')
+
+joinedNames = 'Bart, Lisa & Maggie'
